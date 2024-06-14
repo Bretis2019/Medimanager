@@ -21,10 +21,10 @@ export function LandingPage() {
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="space-y-4">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  Streamline Your Medical Practice with MediManager
+                  Streamline Your Medical Practice with Medimanage
                 </h1>
                 <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                  MediManager is a comprehensive practice management system designed to simplify and optimize your
+                  Medimanage is a comprehensive practice management system designed to simplify and optimize your
                   medical office operations. From patient records to billing, our intuitive platform helps you focus on
                   providing exceptional care.
                 </p>
@@ -50,7 +50,7 @@ export function LandingPage() {
                   Streamline Patient Records
                 </h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  MediManager&amp;aposs intuitive patient management module allows you to easily store, access, and update
+                  Medimanage intuitive patient management module allows you to easily store, access, and update
                   patient information, ensuring efficient and secure record-keeping.
                 </p>
                 <div className="flex items-center gap-4">
@@ -85,7 +85,7 @@ export function LandingPage() {
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Streamline Appointments</h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  MediManager&amp;aposs appointment scheduling module allows you to easily manage patient appointments, reducing
+                  Medimanage appointment scheduling module allows you to easily manage patient appointments, reducing
                   no-shows and ensuring efficient use of your time.
                 </p>
                 <div className="flex items-center gap-4">
@@ -108,7 +108,7 @@ export function LandingPage() {
                   Streamline Prescriptions and Records
                 </h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  {"MediManager&amp;aposs prescription and records module allows you to easily manage patient prescriptions and records, \nensuring accurate and efficient care."}
+                  {"Medimanage's prescription and records module allows you to easily manage patient prescriptions and records, \nensuring accurate and efficient care."}
                 </p>
                 <div className="flex items-center gap-4">
                   <DollarSignIcon className="h-6 w-6" />

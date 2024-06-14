@@ -4,9 +4,19 @@ import {pb} from "@/lib/utils";
 import {useRouter} from "next/navigation";
 import {ProfilePage} from "@/components/component/profile-page";
 import Link from "next/link";
+import {useEffect, useState} from "react";
 
 export default function Page(){
     const router = useRouter();
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+    if (!isMounted) {
+        return null;
+
+    }
     const logout = () => {
         pb.authStore.clear();
         router.push('/login');

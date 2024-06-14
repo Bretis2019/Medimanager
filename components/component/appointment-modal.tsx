@@ -25,7 +25,7 @@ interface patient {
 export function AppointmentModal({onRefresh, appointment, trigger}: any) {
     const [patients, setPatients] = useState<patient[]>([]);
     const [patient, setPatient] = useState(appointment?.expand.patient.name || "");
-    const [date, setDate] = useState(new Date(appointment?.date) || new Date());
+    const [date, setDate] = useState(appointment?.date ? new Date(appointment?.date) : null);
     const [reason, setReason] = useState( appointment?.reason || "");
 
     const fetchData = async () => {
