@@ -45,7 +45,6 @@ export default function StaffDashboard() {
     }
 
     const fetchData = async () => {
-        const user = {name: pb?.authStore?.model?.name, id: pb?.authStore?.model?.id}
         setLoading(true);
         const appointmentsResult = await pb.collection('appointments').getList(1, 50, {
             expand: 'patient,doctor',
@@ -100,7 +99,7 @@ export default function StaffDashboard() {
                     </div>
                     <h1 className="text-2xl font-bold">Staff Dashboard</h1>
                 </div>
-                <div className="grid-cols-2 md:flex items-center md:gap-4">
+                <div className="grid-cols-2 md:flex items-center md:gap-4 pt-2 md:pt-0">
                     <Button
                         variant={activeTab === "appointments" ? "secondary" : "default"}
                         onClick={() => setActiveTab("appointments")}

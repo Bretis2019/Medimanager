@@ -71,16 +71,16 @@ export function PatientDashboard() {
   return (
     <div className="grid min-h-screen w-full">
       <div className="flex flex-col">
-        <div className="flex h-14 lg:h-[60px] justify-between items-center gap-4 border-b bg-gray-100/40 px-6 dark:bg-gray-800/40">
+        <div className="flex h-14 lg:h-[60px] md:justify-between items-center gap-4 border-b bg-gray-100/40 px-6 dark:bg-gray-800/40">
           <div className={"flex items-center gap-x-2"}>
             <div className={"bg-white rounded"}>
               <Image width={50} height={50} src="/logo.svg" alt="logo" />
             </div>
-            <h1 className="text-2xl font-bold">Patient Dashboard</h1>
+            <h1 className="md:text-2xl font-bold">Patient Dashboard</h1>
           </div>
           <Button variant={"outline"}><Link href={"/profile"} className={"text-black"}>{user?.name}</Link></Button>
         </div>
-        <div className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-6">
+        <div className="flex flex-col gap-4 p-4 md:gap-8 md:p-6">
           <Tabs className="grid gap-4 md:gap-8" defaultValue="appointments">
             <TabsList className="flex gap-4 md:gap-8">
               <TabsTrigger value="appointments">Appointments</TabsTrigger>

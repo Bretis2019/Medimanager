@@ -118,7 +118,7 @@ export default function DoctorDashboard() {
             </div>
             <h1 className="text-2xl font-bold">Doctor Dashboard</h1>
           </div>
-          <div className="grid-cols-2 md:flex items-center md:gap-4">
+          <div className="pt-2 md:pt-0 flex flex-wrap items-center justify-center md:gap-4">
             <Button
                 variant={activeTab === "appointments" ? "secondary" : "default"}
                 onClick={() => setActiveTab("appointments")}
@@ -148,9 +148,11 @@ export default function DoctorDashboard() {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-[80svw]"
             />
-            {activeTab === "appointments" && <AppointmentModal onRefresh={handleRefresh} trigger={<Button>Create New Appointment</Button>}/>}
-            {activeTab === "prescriptions" && <PerscriptionModal onRefresh={handleRefresh} trigger={<Button variant="default">Create New Prescription</Button>}/>}
-            {activeTab === "medical-history" && <HistoryModal onRefresh={handleRefresh} trigger={<Button>Add New Medical Record</Button>}/>}
+            <div className={"pt-2 md:pt-0"}>
+              {activeTab === "appointments" && <AppointmentModal onRefresh={handleRefresh} trigger={<Button>Create New Appointment</Button>}/>}
+              {activeTab === "prescriptions" && <PerscriptionModal onRefresh={handleRefresh} trigger={<Button variant="default">Create New Prescription</Button>}/>}
+              {activeTab === "medical-history" && <HistoryModal onRefresh={handleRefresh} trigger={<Button>Add New Medical Record</Button>}/>}
+            </div>
           </div>
           {activeTab === "appointments" && (
               <Table>
